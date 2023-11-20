@@ -1,0 +1,111 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "System.Device.Location.Portable/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/System.Device.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/System.Device.Portable.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "System.Device.Location.Portable/1.0.0": {
+      "sha512": "VttxozXEleYcK2NiMo7xKMhDCCJbKtjnxcWDmqu703DeceLTI/9jopfEblyZKL0DWHGyOYLEan06yk6Hcv2cXw==",
+      "type": "package",
+      "path": "system.device.location.portable/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/System.Device.Portable.dll",
+        "system.device.location.portable.1.0.0.nupkg.sha512",
+        "system.device.location.portable.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "System.Device.Location.Portable >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\33652\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\33652\\Documents\\SI4\\S7\\Middleware\\Let-s-go-Biking-\\C#\\TP2 - REST\\TP2 REST SOAP\\TP2 REST.csproj",
+      "projectName": "TP2 REST",
+      "projectPath": "C:\\Users\\33652\\Documents\\SI4\\S7\\Middleware\\Let-s-go-Biking-\\C#\\TP2 - REST\\TP2 REST SOAP\\TP2 REST.csproj",
+      "packagesPath": "C:\\Users\\33652\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\33652\\Documents\\SI4\\S7\\Middleware\\Let-s-go-Biking-\\C#\\TP2 - REST\\TP2 REST SOAP\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\33652\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "dependencies": {
+          "System.Device.Location.Portable": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Le package 'System.Device.Location.Portable 1.0.0' a été restauré en utilisant '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' au lieu du framework cible du projet 'net7.0'. Ce package n'est peut-être pas totalement compatible avec votre projet.",
+      "libraryId": "System.Device.Location.Portable",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
+}

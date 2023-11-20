@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "Th39W+djlpwt1OmufZE0ZGUSvju4SHhZ0T+09jaia49XDwQdBsSB8o4rfLFy64ZgsDTmiUq/Lv3ZBfk9AOr4fQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\33652\\Documents\\SI4\\S7\\Middleware\\Let-s-go-Biking-\\C#\\TP2 - REST\\TP2 REST SOAP\\TP2 REST.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\33652\\.nuget\\packages\\system.device.location.portable\\1.0.0\\system.device.location.portable.1.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Le package 'System.Device.Location.Portable 1.0.0' a été restauré en utilisant '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' au lieu du framework cible du projet 'net7.0'. Ce package n'est peut-être pas totalement compatible avec votre projet.",
+      "libraryId": "System.Device.Location.Portable",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
+}
