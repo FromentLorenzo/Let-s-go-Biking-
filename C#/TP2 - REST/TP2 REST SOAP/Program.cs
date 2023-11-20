@@ -13,34 +13,34 @@ class Program
     {
         string apiKey = "e65de5172e58282b856fd72204eb35c710d1e336";
 
-        try
-        {
-            // Assume you have the user's provided latitude and longitude
-            double userLatitude = 48.8566; // Example latitude
-            double userLongitude = 2.3522; // Example longitude
+        // Assume you have the user's provided latitude and longitude
+        double userLatitude = 48.8566; // Example latitude
+        double userLongitude = 2.3522; // Example longitude
 
-            // Get stations for the specified contract
-            List<Station> stations = await GetStationsAsync(apiKey);
 
-            // Calculate distances to the stations and sort by distance
-            stations.ForEach(station =>
+        static async Task<List<Station>> GetSortedStations(string apiKey, double userLongitude, double userLatitude) {
+            try
             {
-                station.distanceToTheStation = CalculateDistance(userLatitude, userLongitude, station.position.lat, station.position.lng);
-            });
+                // Get stations for the specified contract
+                List<Station> stations = await GetStationsAsync(apiKey);
 
-            // Sort stations by distance
-            stations.Sort((s1, s2) => s1.distanceToTheStation.CompareTo(s2.distanceToTheStation));
+                // Calculate distances to the stations and sort by distance
+                stations.ForEach(station =>
+                {
+                    station.distanceToTheStation = CalculateDistance(userLatitude, userLongitude, station.position.lat, station.position.lng);
+                });
 
-            // Display sorted stations
-            foreach (var station in stations)
-            {
-                Console.WriteLine($"Station: {station.name}, Distance: {station.distanceToTheStation} meters");
+                // Sort stations by distance
+                stations.Sort((s1, s2) => s1.distanceToTheStation.CompareTo(s2.distanceToTheStation));
+
+                return stations;
             }
-        }
-        catch (HttpRequestException e)
-        {
-            Console.WriteLine("\nException Caught!");
-            Console.WriteLine("Message :{0} ", e.Message);
+            catch (HttpRequestException e)
+            {
+                Console.WriteLine("\nException Caught!");
+                Console.WriteLine("Message :{0} ", e.Message);
+                return null;
+            }
         }
     }
 

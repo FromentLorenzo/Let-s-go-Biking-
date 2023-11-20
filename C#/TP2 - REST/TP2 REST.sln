@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TP2 REST", "TP2 REST SOAP\TP2 REST.csproj", "{FCBCE19B-ECDC-4BF8-92BF-F6356AC456CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "routingServer", "routingServer\routingServer.csproj", "{D87B763D-BBB4-45A4-8038-41E31CE4C3AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FCBCE19B-ECDC-4BF8-92BF-F6356AC456CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCBCE19B-ECDC-4BF8-92BF-F6356AC456CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCBCE19B-ECDC-4BF8-92BF-F6356AC456CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D87B763D-BBB4-45A4-8038-41E31CE4C3AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D87B763D-BBB4-45A4-8038-41E31CE4C3AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D87B763D-BBB4-45A4-8038-41E31CE4C3AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D87B763D-BBB4-45A4-8038-41E31CE4C3AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

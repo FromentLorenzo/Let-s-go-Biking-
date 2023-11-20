@@ -1,0 +1,2 @@
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\C#\TP2 - REST\routingServer\obj\Debug\routingServer.csproj.AssemblyReference.cache
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\C#\TP2 - REST\routingServer\obj\Debug\routingServer.csproj.CoreCompileInputs.cache
