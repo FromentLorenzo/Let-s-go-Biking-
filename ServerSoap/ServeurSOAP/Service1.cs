@@ -13,22 +13,32 @@ namespace ServeurSOAP
     {
         static readonly HttpClient client = new HttpClient();
 
-        public string getRoute(string depart, string arrivee)
+        public async Task<string> getRoute(string depart, string arrivee)
         {
             string contrat = getContract(depart);
-            Task<List<Station>> stations = GetStationsAsync("e65de5172e58282b856fd72204eb35c710d1e336", contrat);
-            List<Station> sortedStations = GetStationsByDistanceAsync(stations, depart).Result;
+            Task<List<Station>> stationsTask = GetStationsAsync("e65de5172e58282b856fd72204eb35c710d1e336", contrat);
 
-            if (sortedStations != null && sortedStations.Any())
+            List<Station> sortedStationsForDepart = await GetStationsByDistanceAsync(stationsTask, depart);
+            Station closestStationDepart = sortedStationsForDepart.First();
+            Console.WriteLine("premiere station depart: " + closestStationDepart.name);
+            List<Station> sortedStationsForArrivee = await GetStationsByDistanceAsync(stationsTask, arrivee);
+
+            if (sortedStationsForDepart != null && sortedStationsForDepart.Any() && sortedStationsForArrivee != null && sortedStationsForArrivee.Any())
             {
-                // Récupérez la station la plus proche (première de la liste triée)
-                Station closestStation = sortedStations.First();
-                Console.WriteLine($"La station la plus proche est : {closestStation.name}, Distance : {closestStation.distanceToTheStation} meters");
-                return closestStation.name;
+                // Récupérer la station la plus proche (première de la liste triée)
+               
+                Console.WriteLine($"La station la plus proche du départ est : {closestStationDepart.name}, Distance : {closestStationDepart.distanceToTheStation} meters");
+
+                Station closestStationArrivee = sortedStationsForArrivee.First();
+                Console.WriteLine($"La station la plus proche de l'arrivée est : {closestStationArrivee.name}, Distance : {closestStationArrivee.distanceToTheStation} meters");
+
+                return $"depart: {closestStationDepart.name}, arrivee: {closestStationArrivee.name}";
             }
 
+            Console.WriteLine("erreur");
             return null;
         }
+
 
         public async Task<List<Station>> GetStationsByDistanceAsync(Task<List<Station>> stationTask, string depart)
         {
@@ -42,7 +52,7 @@ namespace ServeurSOAP
                 {
                     OpenStreetMapGeocodingService geocodingService = new OpenStreetMapGeocodingService();
                     var coordinates = await geocodingService.GetCoordinatesAsync(depart);
-                    Console.WriteLine(coordinates.ToString());
+                    //Console.WriteLine(coordinates.ToString());
 
                     stations.ForEach(station =>
                     {
@@ -101,7 +111,7 @@ namespace ServeurSOAP
 
                 // Récupérez le contenu de la réponse
                 string responseBody = await responseStations.Content.ReadAsStringAsync();
-                Console.WriteLine($"Contenu de la réponse JSON avant désérialisation : {responseBody}");
+                //Console.WriteLine($"Contenu de la réponse JSON avant désérialisation : {responseBody}");
 
                 List<Station> stations = new List<Station>();
 
@@ -115,8 +125,8 @@ namespace ServeurSOAP
                         // Désérialisez chaque objet de station individuellement
                         Station station = stationToken.ToObject<Station>();
                         stations.Add(station);
-                        Console.WriteLine("lat: " + station.position.latitude);
-                        Console.WriteLine("lon: " + station.position.longitude);
+                        //Console.WriteLine("lat: " + station.position.latitude);
+                        //Console.WriteLine("lon: " + station.position.longitude);
                     }
                     Console.WriteLine($"Stations: {stations.Count}");
                     return stations;

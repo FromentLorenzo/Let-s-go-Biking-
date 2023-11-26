@@ -11,7 +11,7 @@ namespace ConsoleApp1
 
             try
             {
-                string resultat = client.getRoute("Avenue Tony Garnier, Lyon", "Avenue Tony Garnier, Lyon");
+                string resultat = client.getRoute("Avenue Tony Garnier, Lyon", "Avenue des Frères Lumière, Lyon");
                 Console.WriteLine("Résultat de la méthode : " + resultat);
                 while (!Console.KeyAvailable)
                 {

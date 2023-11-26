@@ -8,3 +8,13 @@ C:\Users\33652\Desktop\Lorenzo Biking\Perso\client\ServerSoap\ServeurSOAP\bin\De
 C:\Users\33652\Desktop\Lorenzo Biking\Perso\client\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.csproj.CopyComplete
 C:\Users\33652\Desktop\Lorenzo Biking\Perso\client\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.exe
 C:\Users\33652\Desktop\Lorenzo Biking\Perso\client\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.pdb
+C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\ServeurSOAP.exe.config
+C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\ServeurSOAP.exe
+C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\ServeurSOAP.pdb
+C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\Newtonsoft.Json.dll
+C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\Newtonsoft.Json.xml
+C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.csproj.AssemblyReference.cache
+C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.csproj.CoreCompileInputs.cache
+C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.csproj.CopyComplete
+C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.exe
+C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.pdb

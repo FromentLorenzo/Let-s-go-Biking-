@@ -1,21 +1,12 @@
-﻿using ServeurSOAP;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.Text;
+﻿using System.ServiceModel;
+using System.Threading.Tasks;  // Assurez-vous d'importer ce namespace
 
 namespace ServeurSoap
 {
-    // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom d'interface "IService1" à la fois dans le code et le fichier de configuration.
     [ServiceContract]
     public interface IService1
     {
         [OperationContract]
-        string getRoute(string depart, string arrivee);
-
-
+        Task<string> getRoute(string depart, string arrivee);
     }
-    
 }
