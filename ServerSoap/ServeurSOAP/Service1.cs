@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 using System;
 using System.Linq;
 using ServeurSoap;
+using ServeurSOAP.ServiceReference1;
 
 namespace ServeurSOAP
 {
     public class Service1 : IService1
     {
         static readonly HttpClient client = new HttpClient();
+        static readonly ProxyClient client2 = new ProxyClient();
+
 
         public async Task<string> getRoute(string depart, string arrivee)
         {
@@ -26,7 +29,7 @@ namespace ServeurSOAP
             if (sortedStationsForDepart != null && sortedStationsForDepart.Any() && sortedStationsForArrivee != null && sortedStationsForArrivee.Any())
             {
                 // Récupérer la station la plus proche (première de la liste triée)
-               
+
                 Console.WriteLine($"La station la plus proche du départ est : {closestStationDepart.name}, Distance : {closestStationDepart.distanceToTheStation} meters");
 
                 Station closestStationArrivee = sortedStationsForArrivee.First();
@@ -101,34 +104,19 @@ namespace ServeurSOAP
 
         static async Task<List<Station>> GetStationsAsync(string apiKey, string contract)
         {
-            Console.WriteLine($"on rentre bien");
-            HttpResponseMessage responseStations = await client.GetAsync($"https://api.jcdecaux.com/vls/v3/stations?contract={contract}&apiKey={apiKey}");
+            Console.WriteLine("tout va bien");
+            string allStations = client2.getAllStationsOfAContract(contract);
 
-            // Vérifiez la réponse HTTP
-            if (responseStations.IsSuccessStatusCode)
+            if (!string.IsNullOrEmpty(allStations))
             {
-                Console.WriteLine("Réponse HTTP réussie");
-
-                // Récupérez le contenu de la réponse
-                string responseBody = await responseStations.Content.ReadAsStringAsync();
-                //Console.WriteLine($"Contenu de la réponse JSON avant désérialisation : {responseBody}");
-
-                List<Station> stations = new List<Station>();
-
                 try
                 {
-                    Console.WriteLine($"Stations");
-                    JArray stationsArray = JArray.Parse(responseBody);
+                    Console.WriteLine("Réponse HTTP réussie");
+                    Console.WriteLine($"Contenu de la réponse JSON avant désérialisation : {allStations}");
 
-                    foreach (JToken stationToken in stationsArray)
-                    {
-                        // Désérialisez chaque objet de station individuellement
-                        Station station = stationToken.ToObject<Station>();
-                        stations.Add(station);
-                        //Console.WriteLine("lat: " + station.position.latitude);
-                        //Console.WriteLine("lon: " + station.position.longitude);
-                    }
+                    List<Station> stations = JsonConvert.DeserializeObject<List<Station>>(allStations);
                     Console.WriteLine($"Stations: {stations.Count}");
+
                     return stations;
                 }
                 catch (JsonException ex)
@@ -144,14 +132,13 @@ namespace ServeurSOAP
             }
             else
             {
-                Console.WriteLine($"Échec de la requête HTTP avec le code : {responseStations.StatusCode}");
-                // Gérer l'échec de la requête HTTP si nécessaire
+                Console.WriteLine("La requête HTTP a échoué ou la réponse est vide.");
                 return null; // Ou une autre valeur par défaut en cas d'échec
             }
         }
     }
 
-    public class Station
+        public class Station
     {
         public int number { get; set; }
         public string contract_name { get; set; }

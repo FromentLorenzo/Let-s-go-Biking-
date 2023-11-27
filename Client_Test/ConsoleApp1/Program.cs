@@ -1,5 +1,7 @@
 ﻿using ConsoleApp1.ServiceReference1;
+using ConsoleApp1.ServiceReference2;
 using System;
+using System.Text.Json; // Ajoutez cette directive pour utiliser le support de désérialisation JSON
 
 namespace ConsoleApp1
 {
@@ -8,10 +10,11 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             var client = new Service1Client();
+            var client2 = new ProxyClient();
 
             try
             {
-                string resultat = client.getRoute("Avenue Tony Garnier, Lyon", "Avenue des Frères Lumière, Lyon");
+                string resultat = client.getRoute("Place Bellecour, Lyon", "Avenue des Frères Lumière, Lyon");
                 Console.WriteLine("Résultat de la méthode : " + resultat);
                 while (!Console.KeyAvailable)
                 {
