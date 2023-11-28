@@ -14,8 +14,10 @@ namespace ConsoleApp1
 
             try
             {
-                string resultat = client.getRoute("Place Bellecour, Lyon", "Avenue des Frères Lumière, Lyon");
+                string resultat = client.getRoute("Rue Gasparin, Lyon", "Rue Émile Zola, Lyon");
+                string resultat2 = client.getRoute("Rue Gasparin, Lyon", "Rue Émile Zola, Lyon");
                 Console.WriteLine("Résultat de la méthode : " + resultat);
+                Console.WriteLine("Résultat de la méthode : " + resultat2);
                 while (!Console.KeyAvailable)
                 {
                     // Vous pouvez mettre ici le code que vous souhaitez exécuter continuellement

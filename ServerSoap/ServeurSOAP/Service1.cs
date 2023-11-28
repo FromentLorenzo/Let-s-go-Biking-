@@ -22,7 +22,16 @@ namespace ServeurSOAP
             Task<List<Station>> stationsTask = GetStationsAsync("e65de5172e58282b856fd72204eb35c710d1e336", contrat);
 
             List<Station> sortedStationsForDepart = await GetStationsByDistanceAsync(stationsTask, depart);
-            Station closestStationDepart = sortedStationsForDepart.First();
+            Station closestStationDepart= null;
+            foreach(var station in sortedStationsForDepart)
+            {
+                if (station.totalStands.availabilities.bikes > 0)
+                {
+                    closestStationDepart = sortedStationsForDepart.First();
+                    break;
+                }
+            }
+            
             Console.WriteLine("premiere station depart: " + closestStationDepart.name);
             List<Station> sortedStationsForArrivee = await GetStationsByDistanceAsync(stationsTask, arrivee);
 
@@ -31,15 +40,60 @@ namespace ServeurSOAP
                 // Récupérer la station la plus proche (première de la liste triée)
 
                 Console.WriteLine($"La station la plus proche du départ est : {closestStationDepart.name}, Distance : {closestStationDepart.distanceToTheStation} meters");
+                Station closestStationArrivee = null;
+                foreach(var station in sortedStationsForArrivee)
+                {
+                    if(station.totalStands.availabilities.stands > 0)
+                    {
+                        closestStationArrivee = sortedStationsForArrivee.First();
+                        break;
+                    }
 
-                Station closestStationArrivee = sortedStationsForArrivee.First();
+                }
+                 
                 Console.WriteLine($"La station la plus proche de l'arrivée est : {closestStationArrivee.name}, Distance : {closestStationArrivee.distanceToTheStation} meters");
+                
+                Task<string> howToMove = bikingOrWalking(closestStationDepart, closestStationArrivee, depart, arrivee);
+                Console.WriteLine(howToMove.Result);
+                string howToMoveResult = await howToMove;
+                if (howToMoveResult=="Biking")
+                {
+                    return $"depart: {closestStationDepart.name}, arrivee: {closestStationArrivee.name}";
+                }
+                if (howToMoveResult=="Walking")
+                {
+                    return "You probably should go by walking, it's faster";
+                }
 
-                return $"depart: {closestStationDepart.name}, arrivee: {closestStationArrivee.name}";
+                
             }
 
             Console.WriteLine("erreur");
             return null;
+        }
+
+        public async Task<string> bikingOrWalking(Station stationDeDepart, Station stationDArrivee, string depart, string arrivee )
+        {
+            OpenStreetMapGeocodingService geocodingService = new OpenStreetMapGeocodingService();
+            var coordDepar = await geocodingService.GetCoordinatesAsync(depart);
+            var coordArriv = await geocodingService.GetCoordinatesAsync(arrivee);
+            double distanceEntreDepartEtArrivee=geocodingService.CalculateDistance(coordDepar.Latitude,coordDepar.Longitude,coordArriv.Latitude,coordArriv.Longitude);
+            double distanceEntreStations = geocodingService.CalculateDistance(stationDeDepart.position.latitude, stationDeDepart.position.longitude, stationDArrivee.position.latitude, stationDArrivee.position.longitude);
+            double distanceEntreDepartEtStationDepart = geocodingService.CalculateDistance(coordDepar.Latitude, coordDepar.Longitude, stationDeDepart.position.latitude, stationDeDepart.position.longitude);
+            double distanceEntreArriveeEtStationArrivee = geocodingService.CalculateDistance(coordArriv.Latitude, coordArriv.Longitude, stationDArrivee.position.latitude, stationDArrivee.position.longitude);
+            if(distanceEntreDepartEtArrivee<distanceEntreArriveeEtStationArrivee||
+                distanceEntreDepartEtArrivee<distanceEntreDepartEtStationDepart||
+                distanceEntreDepartEtArrivee<distanceEntreArriveeEtStationArrivee+distanceEntreDepartEtStationDepart||
+                distanceEntreDepartEtArrivee < distanceEntreArriveeEtStationArrivee*2 ||
+                distanceEntreDepartEtArrivee < distanceEntreDepartEtStationDepart * 2)
+            {
+                return "Walking";
+            }
+            else
+            {
+                return "Biking";
+            }
+
         }
 
 
@@ -145,6 +199,17 @@ namespace ServeurSOAP
         public Position position { get; set; }
         public string name { get; set; }
         public double distanceToTheStation { get; set; }
+        public TotalStands totalStands { get; set; }
+    }
+    public class TotalStands
+    {
+        public Availabilities availabilities { get; set; }
+        public int capacity { get; set; }
+    }
+    public class Availabilities
+    {
+        public int bikes { get; set; }
+        public int stands { get; set; }
     }
 
     public class Position
