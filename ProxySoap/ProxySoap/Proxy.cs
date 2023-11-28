@@ -38,7 +38,7 @@ namespace ProxySoap
         public string getAllStationsOfAContract(string chosenContract)
         {
             //récup depuis le cache
-            string stations = cache.Get(chosenContract).getStations();
+            string stations = cache.Get(chosenContract,900).getStations();
             Console.WriteLine(stations);
             return stations;
         }
