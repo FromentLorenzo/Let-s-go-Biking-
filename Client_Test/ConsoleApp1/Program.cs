@@ -15,7 +15,8 @@ namespace ConsoleApp1
             try
             {
                 //string resultat = client.getRoute("Rue Gasparin, Lyon", "Rue Émile Zola, Lyon");
-                string resultat = client.getRoute("Rue du Boeuf, Lyon", "Avenue Berthelot, Lyon");
+                //string resultat = client.getRoute("Rue du Boeuf, Lyon", "Avenue Berthelot, Lyon");
+                string resultat = client.getRoute("Rue du Boeuf, Lyon", "1 Rue de la Paix, Nantes");
                 Console.WriteLine("Résultat de la méthode : " + resultat);
                 //Console.WriteLine("Résultat de la méthode : " + resultat2);
                 while (!Console.KeyAvailable)

@@ -12,16 +12,28 @@ namespace ServeurSOAP
 {
     public class Service1 : IService1
     {
+        // Client HTTP réutilisable pour les requêtes
         static readonly HttpClient client = new HttpClient();
+        // Instance du client Proxy pour l'utilisation de la classe ProxyClient
         static readonly ProxyClient client2 = new ProxyClient();
 
-
+        // Méthode pour obtenir l'itinéraire entre deux points
         public async Task<string> getRoute(string depart, string arrivee)
         {
+            bool deuxVillesDiff = false;
+            //obtention du contract grâce à la ville de départ
             string contrat = getContract(depart);
+            string contrat2 = getContract(arrivee);
+            //check que l'utilisateur reste bien dans la même ville
+            if (contrat != contrat2)
+            {
+                deuxVillesDiff=true;
+            }
+            //obtiention de la liste des station pour le contrat
             Task<List<Station>> stationsTask = GetStationsAsync("e65de5172e58282b856fd72204eb35c710d1e336", contrat);
-
+            //tri des stations par proximité pour le départ
             List<Station> sortedStationsForDepart = await GetStationsByDistanceAsync(stationsTask, depart);
+            //sélection de la station la plus proche du départ
             Station closestStationDepart= null;
             foreach(var station in sortedStationsForDepart)
             {
@@ -32,9 +44,9 @@ namespace ServeurSOAP
                 }
             }
             
-            //Console.WriteLine("premiere station depart: " + closestStationDepart.name);
+            //tri des stations par proximité pour l'arrivée
             List<Station> sortedStationsForArrivee = await GetStationsByDistanceAsync(stationsTask, arrivee);
-
+            //vérification que les listes de stations stations sont valides/pas vides
             if (sortedStationsForDepart != null && sortedStationsForDepart.Any() && sortedStationsForArrivee != null && sortedStationsForArrivee.Any())
             {
                 // Récupérer la station la plus proche (première de la liste triée)
@@ -51,11 +63,12 @@ namespace ServeurSOAP
 
                 }
                  
-                //Console.WriteLine($"La station la plus proche de l'arrivée est : {closestStationArrivee.name}, Distance : {closestStationArrivee.distanceToTheStation} meters");
                 
-                Task<string> howToMove = bikingOrWalking(closestStationDepart, closestStationArrivee, depart, arrivee);
-                //Console.WriteLine(howToMove.Result);
+                //obtention mode de déplacement le plus adapté
+                Task<string> howToMove = bikingOrWalking(closestStationDepart, closestStationArrivee, depart, arrivee,deuxVillesDiff);
+                
                 string howToMoveResult = await howToMove;
+                //instructions si le mode est à vélo
                 if (howToMoveResult == "Bicycling")
                 {
                     OpenStreetMapGeocodingService geocodingService = new OpenStreetMapGeocodingService();
@@ -85,7 +98,7 @@ namespace ServeurSOAP
 
                     Console.WriteLine("\nNow this is the bike itinerary:");
                     Console.WriteLine(string.Join("\n", instructionsStationDStationA.Result));
-
+                        
                     Console.WriteLine("\nAnd now you can go to your destination by following this:");
                     Console.WriteLine(string.Join("\n", instructionsStationAArrivee.Result));
 
@@ -100,8 +113,8 @@ namespace ServeurSOAP
                     return result;
 
                 }
-
-                if (howToMoveResult == "Walking")
+                //instructions si c'est à pied
+                if (howToMoveResult == "Walking" || howToMoveResult == "driving")
                 {
                     OpenStreetMapGeocodingService geocodingService = new OpenStreetMapGeocodingService();
                     bing bing=new bing();
@@ -118,8 +131,15 @@ namespace ServeurSOAP
 
                     // Concaténer les instructions dans une seule chaîne
                     string instructionsAsString = string.Join("\n", instructionResult);
-
-                    return "You should probably go by walking, it's faster\n" + instructionsAsString;
+                    if (howToMoveResult == "Walking")
+                    {
+                        return "You should probably go by walking, it's faster\n" + instructionsAsString;
+                    }
+                    else
+                    {
+                        return "You want to change of city, you should go by car, it is impossible using city bikes!::\n" + instructionsAsString;
+                    }
+                    
                 }
 
 
@@ -132,7 +152,7 @@ namespace ServeurSOAP
 
 
 
-        public async Task<string> bikingOrWalking(Station stationDeDepart, Station stationDArrivee, string depart, string arrivee )
+        public async Task<string> bikingOrWalking(Station stationDeDepart, Station stationDArrivee, string depart, string arrivee, bool deuxVillesDif )
         {
             OpenStreetMapGeocodingService geocodingService = new OpenStreetMapGeocodingService();
             var coordDepar = await geocodingService.GetCoordinatesAsync(depart);
@@ -145,9 +165,17 @@ namespace ServeurSOAP
                 distanceEntreDepartEtArrivee<distanceEntreDepartEtStationDepart||
                 distanceEntreDepartEtArrivee<distanceEntreArriveeEtStationArrivee+distanceEntreDepartEtStationDepart||
                 distanceEntreDepartEtArrivee < distanceEntreArriveeEtStationArrivee*2 ||
-                distanceEntreDepartEtArrivee < distanceEntreDepartEtStationDepart * 2)
+                distanceEntreDepartEtArrivee < distanceEntreDepartEtStationDepart * 2||deuxVillesDif)
             {
-                return "Walking";
+                if (!deuxVillesDif)
+                {
+                    return "Walking";
+                }
+                else
+                {
+                    return "driving";
+                }
+                
             }
             else
             {
