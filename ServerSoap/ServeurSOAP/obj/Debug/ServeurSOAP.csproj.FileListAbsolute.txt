@@ -18,3 +18,14 @@ C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurS
 C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.csproj.CopyComplete
 C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.exe
 C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.pdb
+C:\Users\quent\Documents\_Documents\Etudes\polytech\S7\middleware\Let-s-go-Biking-\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.exe
+C:\Users\quent\Documents\_Documents\Etudes\polytech\S7\middleware\Let-s-go-Biking-\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.pdb
+C:\Users\quent\Documents\_Documents\Etudes\polytech\S7\middleware\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\ServeurSOAP.exe.config
+C:\Users\quent\Documents\_Documents\Etudes\polytech\S7\middleware\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\ServeurSOAP.exe
+C:\Users\quent\Documents\_Documents\Etudes\polytech\S7\middleware\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\ServeurSOAP.pdb
+C:\Users\quent\Documents\_Documents\Etudes\polytech\S7\middleware\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\Newtonsoft.Json.dll
+C:\Users\quent\Documents\_Documents\Etudes\polytech\S7\middleware\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\Newtonsoft.Json.xml
+C:\Users\quent\Documents\_Documents\Etudes\polytech\S7\middleware\Let-s-go-Biking-\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.csproj.AssemblyReference.cache
+C:\Users\quent\Documents\_Documents\Etudes\polytech\S7\middleware\Let-s-go-Biking-\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.csproj.SuggestedBindingRedirects.cache
+C:\Users\quent\Documents\_Documents\Etudes\polytech\S7\middleware\Let-s-go-Biking-\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.csproj.CoreCompileInputs.cache
+C:\Users\quent\Documents\_Documents\Etudes\polytech\S7\middleware\Let-s-go-Biking-\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.csproj.CopyComplete

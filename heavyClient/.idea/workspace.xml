@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="08be120a-de7e-4d89-b118-354c8ac91f9e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.vs/VSWorkspaceState.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/heavyClient.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soap/ws/client/generated/GetRoute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soap/ws/client/generated/GetRouteResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soap/ws/client/generated/IService1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soap/ws/client/generated/ObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soap/ws/client/generated/Service1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soap/ws/client/generated/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soc/heavyClient/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_Test/.vs/ConsoleApp1/FileContentIndex/4dcf5987-5936-462f-860f-373f40599105.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_Test/.vs/ConsoleApp1/FileContentIndex/8dbc82de-efb7-4f43-a588-d10e0b1f5626.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_Test/.vs/ConsoleApp1/FileContentIndex/971a7cd9-93dc-4900-88cf-e333b9d4219a.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_Test/.vs/ConsoleApp1/FileContentIndex/ca57809e-c57a-456e-8b61-857fcdee4941.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_Test/.vs/ConsoleApp1/FileContentIndex/d59fbdf7-b3f9-4283-ae3b-29d5219221a4.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_Test/.vs/ConsoleApp1/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_Test/.vs/ConsoleApp1/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/bin/Debug/ConsoleApp1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/bin/Debug/ConsoleApp1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/bin/Debug/ConsoleApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/bin/Debug/ConsoleApp1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/obj/Debug/ConsoleApp1.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/obj/Debug/ConsoleApp1.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/obj/Debug/ConsoleApp1.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/obj/Debug/ConsoleApp1.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/obj/Debug/ConsoleApp1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/obj/Debug/ConsoleApp1.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/obj/Debug/ConsoleApp1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/obj/Debug/ConsoleApp1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/obj/Debug/ConsoleApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/obj/Debug/ConsoleApp1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/.vs/ProxySoap/FileContentIndex/5538d117-58de-442b-ae85-dfc1521bf887.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/.vs/ProxySoap/FileContentIndex/7e9a89c0-0400-4d33-9f4b-870aa9cd3c97.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/.vs/ProxySoap/FileContentIndex/8df95963-0005-4eeb-88c8-1994fc857127.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/.vs/ProxySoap/FileContentIndex/a68c1816-6bd8-4b8d-a0f9-b28752f38f34.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/.vs/ProxySoap/FileContentIndex/b298de36-6cd2-4681-876d-9f9206b609f2.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/.vs/ProxySoap/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/.vs/ProxySoap/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/App.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/ProxySoap.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/ProxySoap.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/bin/Debug/ProxySoap.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/bin/Debug/ProxySoap.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/bin/Debug/ProxySoap.exe.config" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/bin/Debug/ProxySoap.exe.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/bin/Debug/ProxySoap.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/bin/Debug/ProxySoap.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.csproj.SuggestedBindingRedirects.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.csproj.SuggestedBindingRedirects.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.exe.config" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.exe.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/.vs/ServerSoap/FileContentIndex/1fb1a518-ea9b-4cd7-9a2b-882de8c9f55e.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/.vs/ServerSoap/FileContentIndex/4e7d5dc8-725c-4597-aa85-e4cc451cd318.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/.vs/ServerSoap/FileContentIndex/5fa540e4-57fd-4feb-9bf3-255ef00fd132.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/.vs/ServerSoap/FileContentIndex/d05d9efa-32e7-41c9-bfdd-2ea0a63e5a18.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/.vs/ServerSoap/FileContentIndex/eeb6e41c-6b60-4914-8aa5-1707b42dd840.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/.vs/ServerSoap/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/.vs/ServerSoap/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/App.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/ServeurSOAP.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/ServeurSOAP.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/bin/Debug/ServeurSOAP.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/bin/Debug/ServeurSOAP.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/bin/Debug/ServeurSOAP.exe.config" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/bin/Debug/ServeurSOAP.exe.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/bin/Debug/ServeurSOAP.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/bin/Debug/ServeurSOAP.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.pdb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2YwsYhHVfnzDpg8dFKKL3ONFbUK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="heavyClient" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="heavyClient" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="08be120a-de7e-4d89-b118-354c8ac91f9e" name="Changes" comment="" />
+      <created>1701448027193</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701448027193</updated>
+      <workItem from="1701448027755" duration="657000" />
+      <workItem from="1701448694817" duration="1920000" />
+      <workItem from="1701450627779" duration="1734000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
