@@ -13,13 +13,13 @@ namespace ServeurSOAP
     {
         static void Main(string[] args)
         {
-            Uri httpUrl = new Uri("http://localhost:8090/IService1/Service1");
+            Uri httpUrl = new Uri("http://localhost:8090/IService1/Service1/");
 
             //Create ServiceHost
             ServiceHost host = new ServiceHost(typeof(Service1), httpUrl);
 
             //Add a service endpoint
-            host.AddServiceEndpoint(typeof(IService1), new WSHttpBinding(), "");
+            //host.AddServiceEndpoint(typeof(IService1), new WSHttpBinding(), "");
 
             //Enable metadata exchange
             ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
