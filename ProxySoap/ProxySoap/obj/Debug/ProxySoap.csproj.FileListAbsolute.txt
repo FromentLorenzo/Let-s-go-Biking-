@@ -22,3 +22,27 @@ C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ProxySoap\ProxySoap
 C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ProxySoap\ProxySoap\obj\Debug\ProxySoap.pdb
 C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ProxySoap\ProxySoap\obj\Debug\ProxySoap.csproj.SuggestedBindingRedirects.cache
 C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ProxySoap\ProxySoap\obj\Debug\ProxySoap.exe.config
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\bin\Debug\ProxySoap.exe.config
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\bin\Debug\ProxySoap.exe
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\bin\Debug\ProxySoap.pdb
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\bin\Debug\System.Buffers.dll
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\bin\Debug\System.Memory.dll
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\bin\Debug\System.Buffers.xml
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\bin\Debug\System.Memory.xml
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\obj\Debug\ProxySoap.csproj.AssemblyReference.cache
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\obj\Debug\ProxySoap.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\obj\Debug\ProxySoap.exe.config
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\obj\Debug\ProxySoap.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\obj\Debug\ProxySoap.csproj.CopyComplete
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\obj\Debug\ProxySoap.exe
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ProxySoap\ProxySoap\obj\Debug\ProxySoap.pdb
