@@ -31,12 +31,21 @@ public class Main extends JFrame {
         arriveeField = new JTextField(13); // Ajusté la taille de la colonne
 
         JButton findRouteButton = new JButton("Trouver l'itinéraire");
+        JButton callMQButton = new JButton("Appeler MQ");
 
-        // Ajout d'un gestionnaire d'événements au bouton
+        // Ajout d'un gestionnaire d'événements au bouton "Trouver l'itinéraire"
         findRouteButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 onFindRouteButtonClicked();
+            }
+        });
+
+        // Ajout d'un gestionnaire d'événements au bouton "Appeler MQ"
+        callMQButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                callMQButtonClicked();
             }
         });
 
@@ -70,6 +79,9 @@ public class Main extends JFrame {
         gbc.gridy++;
         leftPanel.add(findRouteButton, gbc);
 
+        gbc.gridy++;
+        leftPanel.add(callMQButton, gbc);
+
         // Ajout du JSplitPane à la JFrame
         add(splitPane);
 
@@ -93,8 +105,16 @@ public class Main extends JFrame {
         GetRoute getRoute = new GetRoute();
         String route = service1.getBasicHttpBindingIService1().getRoute(depart, arrivee);
 
-        // Affichage des instructions dans le JTextArea
-        resultArea.setText(route);
+        // Ajout des instructions dans le JTextArea sans effacer le texte existant
+        resultArea.append("\nAppuyez sur le bouton \"Appeler MQ\" pour obtenir l'itinéraire");
+    }
+
+    private void callMQButtonClicked() {
+        // Appeler la méthode statique callMQ de la classe MQ
+        String message = MQ.callMQ();
+
+        // Ajouter le message dans le JTextArea sans effacer le texte existant
+        resultArea.append("\n" + message);
     }
 
     public static void main(String[] args) {
