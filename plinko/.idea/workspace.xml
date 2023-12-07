@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="50abf5db-1938-4131-b19b-1ededfa45b21" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/mapUtilities/Itineraire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Let-s-go-Biking-/FileContentIndex/77362c30-f464-42cf-967a-15866499653a.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Let-s-go-Biking-/FileContentIndex/7dbc273a-e5b3-4b97-829d-cd06c3594958.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Let-s-go-Biking-/FileContentIndex/cd0b9b2c-247c-43eb-9443-75f5d947f29a.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Let-s-go-Biking-/v17/.wsuo" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/Let-s-go-Biking-/v17/.wsuo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/VSWorkspaceState.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/obj/Debug/ConsoleApp1.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/obj/Debug/ConsoleApp1.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/.vs/ProxySoap/FileContentIndex/2b6e84b7-4717-43bf-b67f-68f089ba6d21.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/.vs/ProxySoap/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/.vs/ProxySoap/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/JCDecauxItems.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/JCDecauxItems.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/bin/Debug/ProxySoap.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/bin/Debug/ProxySoap.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/bin/Debug/ProxySoap.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/bin/Debug/ProxySoap.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/.vs/ServerSoap/FileContentIndex/1bd67130-406d-417e-bf0e-a67d1f7a596c.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/.vs/ServerSoap/FileContentIndex/8ba9b567-ea6f-40eb-bc06-0ad1bf2b827a.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/.vs/ServerSoap/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/.vs/ServerSoap/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/OpenRouteService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/OpenRouteService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/Service1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/Service1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/bin/Debug/ServeurSOAP.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/bin/Debug/ServeurSOAP.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/bin/Debug/ServeurSOAP.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/bin/Debug/ServeurSOAP.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/bing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/bing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plinko-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/plinko-1.0-SNAPSHOT.jar" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2Z4OHd4tDsbBIgLWC3r1AM5YDJ1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Documents/midleware/projet/Let-s-go-Biking-/plinko&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50abf5db-1938-4131-b19b-1ededfa45b21" name="Changes" comment="" />
+      <created>1701677802277</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701677802277</updated>
+      <workItem from="1701677803023" duration="8435000" />
+      <workItem from="1701939439284" duration="937000" />
+      <workItem from="1701976936456" duration="6980000" />
+      <workItem from="1701985837744" duration="996000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

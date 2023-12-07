@@ -20,6 +20,7 @@ namespace ServeurSOAP
         // Méthode pour obtenir l'itinéraire entre deux points
         public async Task<string> getRoute(string depart, string arrivee)
         {
+            ActiveMQ activeMQ = new ActiveMQ("queue");
             bool deuxVillesDiff = false;
             //obtention du contract grâce à la ville de départ
             string contrat = getContract(depart);
@@ -109,7 +110,7 @@ namespace ServeurSOAP
                                     string.Join("\n", instructionsStationDStationA.Result) +
                                     "\n\nAnd now you can go to your destination by following this:\n\n" +
                                     string.Join("\n", instructionsStationAArrivee.Result);
-
+                    await activeMQ.PushOnQueueAsync(result);
                     return result;
 
                 }
@@ -133,10 +134,12 @@ namespace ServeurSOAP
                     string instructionsAsString = string.Join("\n", instructionResult);
                     if (howToMoveResult == "Walking")
                     {
+                        await activeMQ.PushOnQueueAsync(instructionsAsString);
                         return "You should probably go by walking, it's faster\n" + instructionsAsString;
                     }
                     else
                     {
+                        await activeMQ.PushOnQueueAsync(instructionsAsString);
                         return "You want to change of city, you should go by car, it is impossible using city bikes!::\n" + instructionsAsString;
                     }
                     

@@ -18,6 +18,7 @@ C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurS
 C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.csproj.CopyComplete
 C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.exe
 C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.pdb
+<<<<<<< HEAD
 C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\ServeurSOAP.exe.config
 C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\ServeurSOAP.exe
 C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\ServeurSOAP.pdb
@@ -28,3 +29,15 @@ C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ServerSoap\ServeurSOAP
 C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.csproj.CopyComplete
 C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.exe
 C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ServerSoap\ServeurSOAP\obj\Debug\ServeurSOAP.pdb
+=======
+C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\Apache.NMS.ActiveMQ.dll
+C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\Apache.NMS.dll
+C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\33652\Desktop\Lorenzo Biking\Perso\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\ICSharpCode.SharpZipLib.xml
+>>>>>>> ad895293f86e1491d3dc43511411eefae48d1e46
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\Apache.NMS.ActiveMQ.dll
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\Apache.NMS.dll
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\User\Documents\midleware\projet\Let-s-go-Biking-\ServerSoap\ServeurSOAP\bin\Debug\ICSharpCode.SharpZipLib.xml
