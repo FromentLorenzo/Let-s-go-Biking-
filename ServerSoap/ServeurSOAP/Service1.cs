@@ -30,7 +30,7 @@ namespace ServeurSOAP
                 deuxVillesDiff=true;
             }
             //obtiention de la liste des station pour le contrat
-            Task<List<Station>> stationsTask = GetStationsAsync("e65de5172e58282b856fd72204eb35c710d1e336", contrat);
+            Task<List<Station>> stationsTask = GetStationsAsync("cbe65de5172e58282b856fd72204eb35c710d1e336", contrat);
             //tri des stations par proximité pour le départ
             List<Station> sortedStationsForDepart = await GetStationsByDistanceAsync(stationsTask, depart);
             //sélection de la station la plus proche du départ
@@ -81,13 +81,13 @@ namespace ServeurSOAP
                     // ...
 
                     // Instructions du départ à la première station
-                    Task<List<string>> instructionsDepartStaionD = bing.GetInstructions("Walking", coordDepar.Latitude, coordDepar.Longitude, closestStationDepart.position.latitude, closestStationDepart.position.longitude);
+                    Task<List<string>> instructionsDepartStaionD = bing.GetGPSPoints("Walking", coordDepar.Latitude, coordDepar.Longitude, closestStationDepart.position.latitude, closestStationDepart.position.longitude);
 
                     // Instructions de la première station à la deuxième station
-                    Task<List<string>> instructionsStationDStationA = routeService.GetInstructions("cycling-regular", closestStationDepart.position.latitude, closestStationDepart.position.longitude, closestStationArrivee.position.latitude, closestStationArrivee.position.longitude);
+                    Task<List<string>> instructionsStationDStationA = routeService.GetGPSPoints("cycling-regular", closestStationDepart.position.latitude, closestStationDepart.position.longitude, closestStationArrivee.position.latitude, closestStationArrivee.position.longitude);
 
                     // Instructions de la deuxième station à la destination
-                    Task<List<string>> instructionsStationAArrivee = bing.GetInstructions("Walking", closestStationArrivee.position.latitude, closestStationArrivee.position.longitude, coordArriv.Latitude, coordArriv.Longitude);
+                    Task<List<string>> instructionsStationAArrivee = bing.GetGPSPoints("Walking", closestStationArrivee.position.latitude, closestStationArrivee.position.longitude, coordArriv.Latitude, coordArriv.Longitude);
 
                     // Attendre l'achèvement de toutes les tâches asynchrones
                     await Task.WhenAll(instructionsDepartStaionD, instructionsStationDStationA, instructionsStationAArrivee);

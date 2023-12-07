@@ -1,6 +1,6 @@
-com\soap\ws\client\generated\ObjectFactory.class
 com\soap\ws\client\generated\IService1.class
 com\soap\ws\client\generated\package-info.class
+com\soap\ws\client\generated\Service1.class
+com\soap\ws\client\generated\ObjectFactory.class
 com\soap\ws\client\generated\GetRouteResponse.class
 com\soap\ws\client\generated\GetRoute.class
-com\soap\ws\client\generated\Service1.class

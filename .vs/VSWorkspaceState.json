@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Client_Test",
-    "\\Client_Test\\ConsoleApp1",
-    "\\ServerSoap",
-    "\\ServerSoap\\ServeurSOAP"
+    "\\ProxySoap",
+    "\\ProxySoap\\ProxySoap"
   ],
-  "SelectedNode": "\\ServerSoap\\ServeurSOAP\\IService1.cs",
+  "SelectedNode": "\\ProxySoap\\ProxySoap\\JCDecauxItems.cs",
   "PreviewInSolutionExplorer": false
 }
