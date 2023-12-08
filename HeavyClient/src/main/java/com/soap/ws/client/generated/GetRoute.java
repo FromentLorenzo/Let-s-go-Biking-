@@ -10,9 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType&gt;
@@ -43,7 +43,7 @@ public class GetRoute {
     protected JAXBElement<String> arrivee;
 
     /**
-     * Obtient la valeur de la propriété depart.
+     * Gets the value of the depart property.
      * 
      * @return
      *     possible object is
@@ -55,7 +55,7 @@ public class GetRoute {
     }
 
     /**
-     * Définit la valeur de la propriété depart.
+     * Sets the value of the depart property.
      * 
      * @param value
      *     allowed object is
@@ -67,7 +67,7 @@ public class GetRoute {
     }
 
     /**
-     * Obtient la valeur de la propriété arrivee.
+     * Gets the value of the arrivee property.
      * 
      * @return
      *     possible object is
@@ -79,7 +79,7 @@ public class GetRoute {
     }
 
     /**
-     * Définit la valeur de la propriété arrivee.
+     * Sets the value of the arrivee property.
      * 
      * @param value
      *     allowed object is

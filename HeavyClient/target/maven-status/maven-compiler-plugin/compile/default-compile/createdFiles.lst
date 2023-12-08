@@ -1,17 +1,13 @@
-<<<<<<< HEAD:plinko/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
 com\soap\ws\client\generated\IService1.class
 com\soap\ws\client\generated\package-info.class
-com\soap\ws\client\generated\Service1.class
 com\soap\ws\client\generated\ObjectFactory.class
-com\soap\ws\client\generated\GetRouteResponse.class
-=======
-Main.class
-com\soap\ws\client\generated\IService1.class
-com\soap\ws\client\generated\package-info.class
-Main$2.class
-com\soap\ws\client\generated\Service1.class
-com\soap\ws\client\generated\ObjectFactory.class
+map\utilities\Itineraire.class
 com\soap\ws\client\generated\GetRouteResponse.class
 Main$1.class
->>>>>>> ad895293f86e1491d3dc43511411eefae48d1e46:HeavyClient/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
 com\soap\ws\client\generated\GetRoute.class
+Main.class
+map\utilities\Itineraire$ItinerairePainter.class
+Main$2.class
+com\soap\ws\client\generated\Service1.class
+Main$3.class
+MQ.class
