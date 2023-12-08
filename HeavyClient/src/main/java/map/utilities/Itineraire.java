@@ -5,9 +5,6 @@ import org.jxmapviewer.painter.CompoundPainter;
 import org.jxmapviewer.viewer.*;
 import org.jxmapviewer.painter.Painter;
 
-import javax.persistence.Subgraph;
-import javax.persistence.Tuple;
-import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.Point2D;
 import java.util.*;
@@ -15,7 +12,7 @@ import java.util.List;
 
 public class Itineraire {
     private List<GeoPosition> points;
-
+    private Color color = Color.RED;
     public Itineraire(List<GeoPosition> points) {
         this.points = new ArrayList<>(points);
     }
@@ -24,17 +21,27 @@ public class Itineraire {
         return points;
     }
 
-    static void displayItineraire(JXMapViewer mapViewer, Itineraire itineraire) {
+    public Color getColor() {
+        return this.color;
+    }
+
+    public void setColor (Color color) {
+        this.color = color;
+    }
+
+    static public void displayItineraire(JXMapViewer mapViewer, Itineraire itineraire, int indexStation1, int indexStation2) {
 
         // on ajoute un Waypooint painter pour afficher les points de l'itinÃ©raire
         Set<Waypoint> waypoints = new HashSet<>();
         waypoints.add(new DefaultWaypoint(itineraire.getpoints().get(0)));
+        waypoints.add(new DefaultWaypoint(itineraire.getpoints().get(indexStation1)));
+        waypoints.add(new DefaultWaypoint(itineraire.getpoints().get(indexStation2)));
         waypoints.add(new DefaultWaypoint(itineraire.getpoints().get(itineraire.getpoints().size() - 1)));
 
         WaypointPainter<Waypoint> waypointPainter = new WaypointPainter<>();
         waypointPainter.setWaypoints(waypoints);
 
-        Painter<JXMapViewer> itinerairePainter = new ItinerairePainter(itineraire.getpoints());
+        Painter<JXMapViewer> itinerairePainter = new ItinerairePainter(itineraire.getpoints(), itineraire.getColor());
 
         List<Painter<JXMapViewer>> painters = new ArrayList<>();
         painters.add(itinerairePainter);
@@ -46,9 +53,11 @@ public class Itineraire {
 
     private static class ItinerairePainter implements Painter<JXMapViewer> {
         private final List<GeoPosition> itineraire;
+        private Color color;
 
-        public ItinerairePainter(List<GeoPosition> itineraire) {
+        public ItinerairePainter(List<GeoPosition> itineraire, Color color) {
             this.itineraire = itineraire;
+            this.color = color;
         }
 
         @Override
@@ -57,7 +66,7 @@ public class Itineraire {
             Rectangle rect = map.getViewportBounds();
             g.translate(-rect.x, -rect.y);
             g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-            g.setColor(Color.RED);
+            g.setColor(this.color);
             g.setStroke(new BasicStroke(3));
             drawRoute(g, map, itineraire);
             g.dispose();

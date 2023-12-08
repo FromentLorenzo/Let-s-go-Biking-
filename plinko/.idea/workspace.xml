@@ -5,40 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50abf5db-1938-4131-b19b-1ededfa45b21" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mapUtilities/Itineraire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.vs/Let-s-go-Biking-/FileContentIndex/77362c30-f464-42cf-967a-15866499653a.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.vs/Let-s-go-Biking-/FileContentIndex/7dbc273a-e5b3-4b97-829d-cd06c3594958.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.vs/Let-s-go-Biking-/FileContentIndex/cd0b9b2c-247c-43eb-9443-75f5d947f29a.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Let-s-go-Biking-/FileContentIndex/70145a32-17b4-44f5-a099-b1d6a343ebca.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Let-s-go-Biking-/FileContentIndex/8164a751-c857-4db0-a1e3-f1b92c1e84e5.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Let-s-go-Biking-/FileContentIndex/9bfd6c53-760c-4b67-8358-7974af639611.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Let-s-go-Biking-/FileContentIndex/db79008d-1dc1-41a5-b182-55454e0dd099.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Let-s-go-Biking-/FileContentIndex/ee23267b-403b-4e84-99f4-b07a9c7294bd.vsidx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.vs/Let-s-go-Biking-/v17/.wsuo" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/Let-s-go-Biking-/v17/.wsuo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/VSWorkspaceState.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/ProjectSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/ProjectSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/slnx.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/obj/Debug/ConsoleApp1.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/obj/Debug/ConsoleApp1.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProxySoap/.vs/ProxySoap/FileContentIndex/2b6e84b7-4717-43bf-b67f-68f089ba6d21.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/obj/Release/ConsoleApp1.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_Test/ConsoleApp1/obj/Release/ConsoleApp1.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HeavyClient/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HeavyClient/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HeavyClient/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HeavyClient/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HeavyClient/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HeavyClient/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HeavyClient/target/classes/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HeavyClient/target/classes/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HeavyClient/target/classes/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HeavyClient/target/classes/Main$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HeavyClient/target/classes/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HeavyClient/target/classes/Main$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HeavyClient/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HeavyClient/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/.vs/ProxySoap/FileContentIndex/0e2e6402-b926-4954-aa02-3adf76fdc43f.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/.vs/ProxySoap/FileContentIndex/35b7a890-0cb7-4061-a31d-a8551f0128fc.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/.vs/ProxySoap/FileContentIndex/58e9987f-dc09-425f-8113-bdc885bad137.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/.vs/ProxySoap/FileContentIndex/78bdbdea-4192-4f75-af19-5156718b9483.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/.vs/ProxySoap/FileContentIndex/92fd2791-458c-4715-abd9-ae5c81cf69ac.vsidx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProxySoap/.vs/ProxySoap/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/.vs/ProxySoap/v17/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/JCDecauxItems.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/JCDecauxItems.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/bin/Debug/ProxySoap.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/bin/Debug/ProxySoap.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/bin/Debug/ProxySoap.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/bin/Debug/ProxySoap.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.csproj.SuggestedBindingRedirects.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.csproj.SuggestedBindingRedirects.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Debug/ProxySoap.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServerSoap/.vs/ServerSoap/FileContentIndex/1bd67130-406d-417e-bf0e-a67d1f7a596c.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServerSoap/.vs/ServerSoap/FileContentIndex/8ba9b567-ea6f-40eb-bc06-0ad1bf2b827a.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Release/ProxySoap.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ProxySoap/ProxySoap/obj/Release/ProxySoap.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/.vs/ServerSoap/FileContentIndex/01fe6b77-9c53-40e2-849a-c65bcd480261.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/.vs/ServerSoap/FileContentIndex/29bbea35-00db-48a5-8a82-715925596126.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/.vs/ServerSoap/FileContentIndex/52fd24d3-b6cf-4da3-8488-02126bdf6b2a.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/.vs/ServerSoap/FileContentIndex/7d24f653-004b-422b-97ca-4417c07e0074.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerSoap/.vs/ServerSoap/FileContentIndex/b6ad88bf-c174-418d-9287-58307aa96741.vsidx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ServerSoap/.vs/ServerSoap/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/.vs/ServerSoap/v17/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/OpenRouteService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/OpenRouteService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/Service1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/Service1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/bin/Debug/ServeurSOAP.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/bin/Debug/ServeurSOAP.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/bin/Debug/ServeurSOAP.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/bin/Debug/ServeurSOAP.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/bing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/bing.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerSoap/ServeurSOAP/obj/Debug/ServeurSOAP.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/plinko-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/plinko-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +84,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/User/Documents/midleware/projet/Let-s-go-Biking-/HeavyClient",
+    "last_opened_file_path": "C:/Users/quent/Documents/_Documents/Etudes/polytech/S7/middleware/Let-s-go-Biking-/plinko",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -93,6 +107,7 @@
       <workItem from="1701939439284" duration="937000" />
       <workItem from="1701976936456" duration="6980000" />
       <workItem from="1701985837744" duration="2580000" />
+      <workItem from="1702056758341" duration="883000" />
     </task>
     <servers />
   </component>

@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="HeavyClient" />
-        <module name="plinko" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="HyeavyClientTest" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
