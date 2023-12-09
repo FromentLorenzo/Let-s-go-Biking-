@@ -76,7 +76,7 @@ namespace ServeurSoap
             {
                 Console.WriteLine($"Error while getting coordinates: {ex.Message}");
             }
-
+            
             return (0, 0);
         }
     }

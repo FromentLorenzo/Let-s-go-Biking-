@@ -79,29 +79,29 @@ namespace ServeurSOAP
                     var coordArriv = await geocodingService.GetCoordinatesAsync(arrivee);
 
                     // Instructions du départ à la première station
-                    // ...
-
-                    // Instructions du départ à la première station
                     Task<List<string>> instructionsDepartStaionD = bing.GetGPSPoints("Walking", coordDepar.Latitude, coordDepar.Longitude, closestStationDepart.position.latitude, closestStationDepart.position.longitude);
+                    Task<List<string>> instructionsDepartStaionDInstru = bing.GetInstructions("Walking", coordDepar.Latitude, coordDepar.Longitude, closestStationDepart.position.latitude, closestStationDepart.position.longitude);
 
                     // Instructions de la première station à la deuxième station
                     Task<List<string>> instructionsStationDStationA = routeService.GetGPSPoints("cycling-regular", closestStationDepart.position.latitude, closestStationDepart.position.longitude, closestStationArrivee.position.latitude, closestStationArrivee.position.longitude);
+                    Task<List<string>> instructionsStationDStationAInstru = routeService.GetInstructions("cycling-regular", closestStationDepart.position.latitude, closestStationDepart.position.longitude, closestStationArrivee.position.latitude, closestStationArrivee.position.longitude);
 
                     // Instructions de la deuxième station à la destination
                     Task<List<string>> instructionsStationAArrivee = bing.GetGPSPoints("Walking", closestStationArrivee.position.latitude, closestStationArrivee.position.longitude, coordArriv.Latitude, coordArriv.Longitude);
+                    Task<List<string>> instructionsStationAArriveeInstru = bing.GetInstructions("Walking", closestStationArrivee.position.latitude, closestStationArrivee.position.longitude, coordArriv.Latitude, coordArriv.Longitude);
 
                     // Attendre l'achèvement de toutes les tâches asynchrones
-                    await Task.WhenAll(instructionsDepartStaionD, instructionsStationDStationA, instructionsStationAArrivee);
+                    await Task.WhenAll(instructionsDepartStaionD, instructionsStationDStationA, instructionsStationAArrivee, instructionsDepartStaionDInstru, instructionsStationAArriveeInstru, instructionsStationDStationAInstru);
 
                     // Afficher chaque ensemble d'instructions sur une nouvelle ligne
-                    Console.WriteLine("You are going by Bike, let's go to the first Station:");
+                    /*Console.WriteLine("You are going by Bike, let's go to the first Station:");
                     Console.WriteLine(string.Join("\n", instructionsDepartStaionD.Result));
 
                     Console.WriteLine("\nNow this is the bike itinerary:");
                     Console.WriteLine(string.Join("\n", instructionsStationDStationA.Result));
-                        
+
                     Console.WriteLine("\nAnd now you can go to your destination by following this:");
-                    Console.WriteLine(string.Join("\n", instructionsStationAArrivee.Result));
+                    Console.WriteLine(string.Join("\n", instructionsStationAArrivee.Result));*/
 
                     // Concaténer les instructions dans une seule chaîne pour le retour
                     string result = "You are going by Bike, let's go to the first Station:\n\n" +
@@ -110,7 +110,14 @@ namespace ServeurSOAP
                                     string.Join("\n", instructionsStationDStationA.Result) +
                                     "\n\nAnd now you can go to your destination by following this:\n\n" +
                                     string.Join("\n", instructionsStationAArrivee.Result);
-                    await activeMQ.PushOnQueueAsync(result);
+                    string resultMQ = "You are going by Bike, let's go to the first Station:\n\n" +
+                                    string.Join("\n", instructionsDepartStaionDInstru.Result) +
+                                    "\n\nNow this is the bike itinerary:\n\n" +
+                                    string.Join("\n", instructionsStationDStationAInstru.Result) +
+                                    "\n\nAnd now you can go to your destination by following this:\n\n" +
+                                    string.Join("\n", instructionsStationAArriveeInstru.Result);
+                    await activeMQ.PushOnQueueAsync(resultMQ);
+                    Console.WriteLine(result);
                     return result;
 
                 }
@@ -122,25 +129,25 @@ namespace ServeurSOAP
                     var coordDepar = await geocodingService.GetCoordinatesAsync(depart);
                     var coordArriv = await geocodingService.GetCoordinatesAsync(arrivee);
                     Task<List<string>> instructions = bing.GetInstructions(howToMoveResult, coordDepar.Latitude, coordDepar.Longitude, coordArriv.Latitude, coordArriv.Longitude);
+                    Task<List<string>> instructionsGPS = bing.GetGPSPoints(howToMoveResult, coordDepar.Latitude, coordDepar.Longitude, coordArriv.Latitude, coordArriv.Longitude);
                     List<string> instructionResult = await instructions;
-
-                    // Afficher chaque instruction sur une nouvelle ligne
-                    foreach (string instruction in instructionResult)
-                    {
-                        Console.WriteLine(instruction);
-                    }
+                    List<string> instructionGPSResult = await instructionsGPS;
 
                     // Concaténer les instructions dans une seule chaîne
+                    string instructionsGPSAsString = string.Join("\n", instructionGPSResult);
                     string instructionsAsString = string.Join("\n", instructionResult);
                     if (howToMoveResult == "Walking")
                     {
+                        await activeMQ.PushOnQueueAsync("You should probably go by walking, it's faster\n");
                         await activeMQ.PushOnQueueAsync(instructionsAsString);
-                        return "You should probably go by walking, it's faster\n" + instructionsAsString;
+                        return instructionsGPSAsString;
                     }
                     else
                     {
+                        await activeMQ.PushOnQueueAsync("You want to change of city, you should go by car, it is impossible using city bikes!\n");
                         await activeMQ.PushOnQueueAsync(instructionsAsString);
-                        return "You want to change of city, you should go by car, it is impossible using city bikes!::\n" + instructionsAsString;
+                        Console.WriteLine(instructionsGPSAsString);
+                        return instructionsGPSAsString;
                     }
                     
                 }
