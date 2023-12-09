@@ -9,8 +9,8 @@ Les 3 dossiers sont les suivants:
   - Un Serveur auquel le client fait appel et qui traite les différentes situtations possibles selon l'adresse de départ et d'arrivée
 
 ## Lancer le projet:
--Attention, veillez bien à avoir le port 8090 ouvert pour que le service host des serveurs ne nécéssitent pas d'être run en admin
--Lancez le premier .bat puis lancer le second situé dans le dossier HeavyClient.
+  - Attention, veillez bien à avoir le port 8090 ouvert pour que le service host des serveurs ne nécéssitent pas d'être run en admin
+  - Lancez le premier .bat puis lancer le second situé dans le dossier HeavyClient.
 
 ## Utilisation du client:
 -Dans la page qui s'est ouverte, commencez par déplacer la barre verticale vers la gauche à votre covenance pour ajuste l'espace où se trouveront les instructions
