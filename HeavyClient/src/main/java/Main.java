@@ -141,19 +141,22 @@ public class Main extends JFrame {
 
         List<String> itineraries = Arrays.asList(route.split("\n\n"));
 
+        ArrayList<GeoPosition> allInstructions = new ArrayList<>();
+
         ArrayList<GeoPosition> walk1 = new ArrayList<>();
         ArrayList<GeoPosition> bike = new ArrayList<>();
         ArrayList<GeoPosition> walk2 = new ArrayList<>();
-        if (itineraries.size() == 6) {
+        if (itineraries.size() == 1) {   //trajet en voiture
+            allInstructions = parseCoordinates((itineraries.get(0)));
+        } else if (itineraries.size() == 6) {  //trajet à vélo
             walk1 = parseCoordinates(itineraries.get(1));
             bike = parseCoordinates(itineraries.get(3));
             walk2 = parseCoordinates(itineraries.get(5));
+            allInstructions.addAll(walk1);
+            allInstructions.addAll(bike);
+            allInstructions.addAll(walk2);
         }
-
-        ArrayList<GeoPosition> allInstructions = new ArrayList<>();
-        allInstructions.addAll(walk1);
-        allInstructions.addAll(bike);
-        allInstructions.addAll(walk2);
+        System.out.println(itineraries.size() + "\n" + route);
 
         try {
             mapViewer.zoomToBestFit(new HashSet<>(allInstructions), 0.5);
