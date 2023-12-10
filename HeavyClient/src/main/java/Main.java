@@ -128,6 +128,7 @@ public class Main extends JFrame {
     }
 
     private void onFindRouteButtonClicked() {
+        resultArea.setText("");
         // Récupération des adresses saisies
         String depart = departField.getText();
         String arrivee = arriveeField.getText();

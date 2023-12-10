@@ -1,16 +1,0 @@
-
-R
-java:S1854"<Remove this useless assignment to local variable "getRoute".( ú‚¸
-^
-java:S1854f"CRemove this useless assignment to local variable "compoundPainter".(‰¤³Ñùÿÿÿÿ
-C
-java:S1481"-Remove this unused "getRoute" local variable.( ú‚¸
-@	java:S106"+Replace this use of System.out by a logger.(ïƒ“Û
-@	java:S106 "+Replace this use of System.out by a logger.(»×¤‰
-_
-java:S3252R"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(¢¡´
-O
-java:S1481f"4Remove this unused "compoundPainter" local variable.(‰¤³Ñùÿÿÿÿ
-V	java:S125i"<This block of commented-out lines of code should be removed.(âÒÙ¬ıÿÿÿÿ
-F
-java:S6035u"0Replace this alternation with a character class.(›éø

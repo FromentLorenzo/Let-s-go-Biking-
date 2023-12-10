@@ -128,20 +128,31 @@ namespace ServeurSOAP
 
         private List<string> ParseBingMapsDirections(JObject json)
         {
+            // Liste qui stockera les instructions d'itinéraire sous forme de chaînes
             List<string> instructions = new List<string>();
 
-            // Vérifiez si la réponse contient des itinéraires
-            JArray routes = (JArray)json["resourceSets"]?[0]?["resources"];
+            // Vérifiez si la réponse contient des ensembles de ressources
+            JArray resourceSets = (JArray)json["resourceSets"];
+
+            // Vérifiez si le premier ensemble de ressources contient des ressources (routes)
+            JArray routes = (JArray)resourceSets?[0]?["resources"];
+
+            // Si des routes sont trouvées dans la réponse
             if (routes != null && routes.HasValues)
             {
-                // Parcourez les étapes et obtenez les instructions
+                // Parcourez les itinéraires et obtenez les instructions
                 JArray itineraryItems = (JArray)routes[0]?["routeLegs"]?[0]?["itineraryItems"];
+
+                // Si des itinéraires sont trouvés dans la réponse
                 if (itineraryItems != null)
                 {
+                    // Parcourez chaque élément d'itinéraire pour extraire les instructions
                     foreach (var item in itineraryItems)
                     {
+                        // Extraire l'instruction textuelle de l'élément d'itinéraire
                         string instruction = item["instruction"]["text"]?.ToString();
-                        //Console.WriteLine(instruction);
+
+                        // Ajouter l'instruction à la liste des instructions
                         instructions.Add(instruction);
                     }
                 }
@@ -151,9 +162,12 @@ namespace ServeurSOAP
                 Console.WriteLine("Aucun itinéraire trouvé dans la réponse.");
             }
 
-            // Ajoutez d'autres cas de traitement en fonction de la structure réelle des données JSON retournées par l'API.
+            // Ajoutez d'autres cas de traitement en fonction de la structure réelle des données JSON
+            // retournées par l'API Bing Maps.
 
+            // Retourner la liste des instructions d'itinéraire
             return instructions;
         }
+
     }
 }

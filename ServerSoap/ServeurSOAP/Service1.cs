@@ -22,6 +22,7 @@ namespace ServeurSOAP
         {
             ActiveMQ activeMQ = new ActiveMQ("queue");
             bool deuxVillesDiff = false;
+            activeMQ.PurgeQueue();
             //obtention du contract grâce à la ville de départ
             string contrat = getContract(depart);
             string contrat2 = getContract(arrivee);

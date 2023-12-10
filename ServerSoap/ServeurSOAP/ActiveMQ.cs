@@ -70,6 +70,50 @@ namespace ServeurSOAP
             }
         }
 
+        public async Task<bool> PurgeQueue()
+        {
+            try
+            {
+                Uri connectUri = new Uri("activemq:tcp://localhost:61616");
+                ConnectionFactory connectionFactory = new ConnectionFactory(connectUri);
+
+                // Créer une connexion unique depuis la fabrique de connexions.
+                using (IConnection connection = connectionFactory.CreateConnection())
+                {
+                    // Créer une session à partir de la connexion.
+                    using (ISession session = connection.CreateSession())
+                    {
+                        // Utiliser la session pour cibler une file d'attente.
+                        IDestination destination = session.GetQueue(this.NomQueue);
+
+                        // Créer un consommateur ciblant la file d'attente sélectionnée.
+                        using (IMessageConsumer consumer = session.CreateConsumer(destination))
+                        {
+                            connection.Start();
+
+                            // Consommer tous les messages existants dans la file d'attente sans les traiter.
+                            IMessage message;
+                            while ((message = consumer.Receive(TimeSpan.FromMilliseconds(1000))) != null)
+                            {
+                                Console.WriteLine($"Purged message: {((ITextMessage)message).Text}");
+                            }
+
+                            // N'oubliez pas de fermer votre session et connexion lorsque vous avez terminé.
+                            session.Close();
+                            connection.Close();
+                        }
+                    }
+                }
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Error: {e.Message}");
+                return false;
+            }
+        }
+
         public List<string> ParseInstructions(string instructions)
         {
             // Diviser la chaîne en lignes

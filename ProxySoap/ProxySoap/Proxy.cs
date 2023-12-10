@@ -18,7 +18,7 @@ namespace ProxySoap
         // Méthode pour obtenir la réponse d'une URL donnée
         public string getResponse(string url)
         {
-            // Appel asynchrone, mais utilisant Result, ce qui peut provoquer un blocage
+            
             Task<string> response = callJCD(url);
             return response.Result; // Peut générer une exception si la tâche n'est pas encore terminée
         }
